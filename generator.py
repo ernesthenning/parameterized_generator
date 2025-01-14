@@ -217,3 +217,15 @@ class Generator:
             f.write('time ')
             f.write('{}\r\n'.format(times[n]))
             f.close()
+
+    def generate_bats_mac(self, current_date, month, day, year):
+        times = self.generate_times()
+        program_directory = path.dirname(path.realpath(__file__))
+        export_path = path.join(program_directory, current_date, self.start_time, "datetime_mac")
+        mkdir(export_path)
+        name_out = '{}.sh'.format('n')
+        f = open(export_path + "/" + name_out, mode='w')
+        for n in range(len(times)):
+            f.write('\r\n')
+            f.write("echo '555721qwertz' | sudo -S date {}\r\n".format(month + day + times[n].split(':')[0] + times[n].split(':')[1] + year))
+        f.close()

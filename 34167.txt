@@ -1,0 +1,33 @@
+градуировка:
+(length_points=18001,
+                    dots_per_minute=600,
+                    bias_left_border=2000,
+                    bias_right_border=9000,
+                    bias_max_intensity=0.1,
+                    bias_min_intensity=0.03,
+                    bias_peaks_number=30,
+                    bias_max_peak_width=150,
+                    bias_min_peak_width=30,
+                    peaks_probe_number=1,
+                    widths_probe=np.array([[300], [300], [300], [300], [300]]),
+                    intensities_probe_peaks=np.array([[6], [9.6], [12], [18], [24]]),
+                    times_probe_peaks=np.array([[14900], [14900], [14900], [14900], [14900]]),
+                    repeatability=0.13,
+                    reproducibility=0.16,
+                    dead_time=1200,
+                    dead_width=200,
+                    dead_intensity=2,
+                    intensities_stability_check=np.array([[6], [6]]),
+                    number_chr_for_stability_check=2,
+                    number_chromatograms_in_series=2,
+                    noise_intensity=0.3,
+                    probes_count=5,
+                    start_time='10:02',
+                    interval_between_chromatograms=35,
+                    cyctime=0.1,
+                    coef=0.0003,
+                    units='mV',
+                    analysis_date='24.12.2024')
+
+внедрение:
+взяли экстракт с содержанием 0,01 нг/мл = 0,00001 мг/л , провели экстракцию с коэффициентом извлечения 0.9 и средняя в итоговом растворе 0.9 нг/мл

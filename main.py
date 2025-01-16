@@ -45,37 +45,37 @@ def generate():
     #for parameter in parameters:
      #   print(parameter)
 
-    gen = Generator(length_points=6001,
+    gen = Generator(length_points=4801,
                     dots_per_minute=600,
                     bias_left_border=1000,
-                    bias_right_border=2900,
-                    bias_max_intensity=0.2,
+                    bias_right_border=1400,
+                    bias_max_intensity=0.4,
                     bias_min_intensity=0.03,
-                    bias_peaks_number=30,
-                    bias_max_peak_width=150,
-                    bias_min_peak_width=30,
+                    bias_peaks_number=6,
+                    bias_max_peak_width=50,
+                    bias_min_peak_width=20,
                     peaks_probe_number=1,
-                    widths_probe=np.array([[150], [150], [150], [150], [150], [150], [150], [150]]),
-                    intensities_probe_peaks=np.array([[43], [43], [43], [43], [43], [43], [43], [43], [43]]),
-                    times_probe_peaks=np.array([[3800], [3800], [3800], [3800], [3800], [3800], [3800], [3800], [3800]]),
+                    widths_probe=np.array([[200], [200], [200], [200], [200], [200], [200], [200]]),
+                    intensities_probe_peaks=np.array([[42.9], [42.9], [42.9], [42.9], [42.9], [42.9], [42.9], [42.9], [42.9]]),
+                    times_probe_peaks=np.array([[2100], [2100], [2100], [2100], [2100], [2100], [2100], [2100]]),
                     repeatability=0.03,
-                    reproducibility=0.03,
+                    reproducibility=0.04,
                     dead_time=1200,
-                    dead_width=200,
+                    dead_width=100,
                     dead_intensity=2,
                     intensities_stability_check=np.array([[6], [6]]),
                     number_chr_for_stability_check=0,
                     number_chromatograms_in_series=2,
                     noise_intensity=0.3,
                     probes_count=8,
-                    start_time='17:47',
-                    interval_between_chromatograms=12,
+                    start_time='17:33',
+                    interval_between_chromatograms=10,
                     cyctime=0.1,
                     coef=0.0003,
                     units='mV',
-                    analysis_date='11.01.2025')
+                    analysis_date='16.01.2025')
     gen.get_exported_chromatograms()
-    gen.generate_bats("11.01.2025")
+    gen.generate_bats("16.01.2025")
 
 
 if __name__ == '__main__':

@@ -133,7 +133,7 @@ class Generator:
             mkdir(export_path)
         except FileExistsError:
             pass
-        export_path = path.join(export_path, self.start_time)
+        export_path = path.join(export_path, self.start_time.replace(":", "_"))
         mkdir(export_path)
         stab_check = self.generate_chromatograms_stability_check()
         series = self.generate_series_with_given_concentrations()
@@ -205,7 +205,7 @@ class Generator:
     def generate_bats(self, current_date):
         times = self.generate_times()
         program_directory = path.dirname(path.realpath(__file__))
-        export_path = path.join(program_directory, current_date, self.start_time, "bats")
+        export_path = path.join(program_directory, current_date, self.start_time.replace(":", "_"), "bats")
         mkdir(export_path)
         for n in range(len(times)):
             name_out = '{}.bat'.format(n)

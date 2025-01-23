@@ -8,7 +8,7 @@
                     bias_peaks_number=6,
                     bias_max_peak_width=50,
                     bias_min_peak_width=20,
-                    peaks_probe_number=2,
+                    peaks_probe_number=1,
                     widths_probe=np.array([[120], [120], [120], [120], [120]]),
                     intensities_probe_peaks=np.array([[21], [41], [63], [210], [1050]]),
                     times_probe_peaks=np.array([[4200], [4200], [4200], [4200], [4200]]),
@@ -27,7 +27,7 @@
                     cyctime=0.1,
                     coef=0.0003,
                     units='mV',
-                    analysis_date='23.01.2025')
+                    analysis_date='22.01.2025')
 
 внедрение:
 проба с концентрацией 0.1 мг/дм3
@@ -40,9 +40,9 @@
                     bias_peaks_number=6,
                     bias_max_peak_width=50,
                     bias_min_peak_width=20,
-                    peaks_probe_number=2,
+                    peaks_probe_number=1,
                     widths_probe=np.array([[120], [120], [120], [120], [120], [120], [120], [120]]),
-                    intensities_probe_peaks=np.array([[21], [41], [63], [210], [1050]]),
+                    intensities_probe_peaks=np.array([[207], [207], [207], [207], [207], [207], [207], [207]]),
                     times_probe_peaks=np.array([[4200], [4200], [4200], [4200], [4200], [4200], [4200], [4200]]),
                     repeatability=0.05,
                     reproducibility=0.08,
@@ -59,7 +59,7 @@
                     cyctime=0.1,
                     coef=0.0003,
                     units='mV',
-                    analysis_date='23.01.2025')
+                    analysis_date='22.01.2025')
 
 градуировка для метода с концентрированием 0.2 0.5 1 2 5 10 мг/дм3 по 2 раза
 (length_points=6001,
@@ -71,7 +71,7 @@
                     bias_peaks_number=6,
                     bias_max_peak_width=50,
                     bias_min_peak_width=20,
-                    peaks_probe_number=2,
+                    peaks_probe_number=1,
                     widths_probe=np.array([[120], [120], [120], [120], [120], [120]]),
                     intensities_probe_peaks=np.array([[50], [125], [250], [500], [1250], [2500]]),
                     times_probe_peaks=np.array([[4200], [4200], [4200], [4200], [4200], [4200]]),
@@ -90,7 +90,7 @@
                     cyctime=0.1,
                     coef=0.0003,
                     units='mV',
-                    analysis_date='23.01.2025')
+                    analysis_date='22.01.2025')
 
 
 внедрение с концентированием в 100 раз
@@ -106,11 +106,11 @@
                     bias_peaks_number=6,
                     bias_max_peak_width=50,
                     bias_min_peak_width=20,
-                    peaks_probe_number=2,
+                    peaks_probe_number=1,
                     widths_probe=np.array([[120], [120], [120], [120], [120], [120], [120], [120]]),
                     intensities_probe_peaks=np.array([[48], [48], [48], [48], [48], [48], [48], [48]]),
                     times_probe_peaks=np.array([[4200], [4200], [4200], [4200], [4200], [4200], [4200], [4200]]),
-                    repeatability=0.6,
+                    repeatability=0.06,
                     reproducibility=0.1,
                     dead_time=1200,
                     dead_width=100,
@@ -120,9 +120,9 @@
                     number_chromatograms_in_series=2,
                     noise_intensity=0.3,
                     probes_count=6,
-                    start_time='15:18',
+                    start_time='17:53',
                     interval_between_chromatograms=11,
                     cyctime=0.1,
                     coef=0.0003,
                     units='mV',
-                    analysis_date='23.01.2025')
+                    analysis_date='22.01.2025')

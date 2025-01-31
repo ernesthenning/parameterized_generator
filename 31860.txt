@@ -123,7 +123,7 @@
                     number_chromatograms_in_series=2,
                     noise_intensity=0.3,
                     probes_count=8,
-                    start_time='15:12',
+                    start_time='17:12',
                     interval_between_chromatograms=32,
                     cyctime=0.1,
                     coef=0.0003,

@@ -1,29 +1,131 @@
-Число точек: 7001
-Число точек в минуту: 600
-Левая граница пиков примесей: 1500
-Правая граница пиков примесей: 2300
-Максимальная интенсивность пиков примесей: 0.2
-Минимальная интенсивность пиков примесей: 0.03
-Число пиков примесей: 10
-Максимальная ширина пиков примесей: 150
-Минимальная ширина пиков примесей: 30
-Число компонентов: 2
-Ширины всех пиков во всех пробах: [[200,190], [180,170]]
-Интенсивности всех пиков во всех пробах: [[1.5,1.4], [1.3,1.2]]
-Времена всех пиков во всех пробах: [[5000, 3000], [5000, 3000]]
-Повторяемость: 0.05
-Воспроизводимость: 0.2
-Мертвое время: 600
-Ширина мертвого пика: 200
-Интенсивность мертвого пика: 0.2
-Интенсивности всех пиков контроля градуировки: [[1, 1], [1, 1]]
-Число хроматограмм для проверки стабильности градуировки: 2
-Число хроматограмм в серии: 3
-Интенсивность шума: 0.002
-Число проб: 2
-Время первой хроматограммы: 15:59,
-Длительность хроматограммы + пауза между заколами, мин: 20
-cyctime: 0.1,
-coef: 0.0003,
-units: mV,
-Дата исследования в формате ДД.ММ.ГГГГ: 12.12.2024
+градуировка 2 10 20 50 100 нг/мл:
+(length_points=18001,
+                    dots_per_minute=600,
+                    bias_left_border=2000,
+                    bias_right_border=9000,
+                    bias_max_intensity=0.1,
+                    bias_min_intensity=0.03,
+                    bias_peaks_number=30,
+                    bias_max_peak_width=150,
+                    bias_min_peak_width=30,
+                    peaks_probe_number=1,
+                    widths_probe=np.array([[300], [300], [300], [300], [300]]),
+                    intensities_probe_peaks=np.array([[6], [30], [60], [150], [300]]),
+                    times_probe_peaks=np.array([[14900], [14900], [14900], [14900], [14900]]),
+                    repeatability=0.01,
+                    reproducibility=0.01,
+                    dead_time=1200,
+                    dead_width=200,
+                    dead_intensity=2,
+                    intensities_stability_check=np.array([[6], [6]]),
+                    number_chr_for_stability_check=0,
+                    number_chromatograms_in_series=2,
+                    noise_intensity=0.3,
+                    probes_count=5,
+                    start_time='09:02',
+                    interval_between_chromatograms=32,
+                    cyctime=0.1,
+                    coef=0.0003,
+                    units='mV',
+                    analysis_date='24.01.2025')
+
+внедрение 1 диапазон:
+подготовили воду с содержанием бензапирена 0.005 мкг/дм3, концентрируют в 2000 раз
+
+(length_points=18001,
+                    dots_per_minute=600,
+                    bias_left_border=2000,
+                    bias_right_border=9000,
+                    bias_max_intensity=0.5,
+                    bias_min_intensity=0.03,
+                    bias_peaks_number=30,
+                    bias_max_peak_width=150,
+                    bias_min_peak_width=30,
+                    peaks_probe_number=1,
+                    widths_probe=np.array([[300], [300], [300], [300], [300], [300], [300], [300]]),
+                    intensities_probe_peaks=np.array([[28], [28], [28], [28], [28], [28], [28], [28]]),
+                    times_probe_peaks=np.array([[14900], [14900], [14900], [14900], [14900], [14900], [14900], [14900]]),
+                    repeatability=0.05,
+                    reproducibility=0.08,
+                    dead_time=1200,
+                    dead_width=200,
+                    dead_intensity=2,
+                    intensities_stability_check=np.array([[6], [6]]),
+                    number_chr_for_stability_check=0,
+                    number_chromatograms_in_series=2,
+                    noise_intensity=0.3,
+                    probes_count=8,
+                    start_time='15:34',
+                    interval_between_chromatograms=32,
+                    cyctime=0.1,
+                    coef=0.0003,
+                    units='mV',
+                    analysis_date='24.01.2025')
+
+внедрение 2 диапазон:
+подготовили воду с содержанием бензапирена 0.025 мкг/дм3, концентрируют в 2000 раз
+
+(length_points=18001,
+                    dots_per_minute=600,
+                    bias_left_border=2000,
+                    bias_right_border=9000,
+                    bias_max_intensity=0.5,
+                    bias_min_intensity=0.03,
+                    bias_peaks_number=30,
+                    bias_max_peak_width=150,
+                    bias_min_peak_width=30,
+                    peaks_probe_number=1,
+                    widths_probe=np.array([[300], [300], [300], [300], [300], [300], [300], [300]]),
+                    intensities_probe_peaks=np.array([[146], [146], [146], [146], [146], [146], [146], [146]]),
+                    times_probe_peaks=np.array([[14900], [14900], [14900], [14900], [14900], [14900], [14900], [14900]]),
+                    repeatability=0.05,
+                    reproducibility=0.08,
+                    dead_time=1200,
+                    dead_width=200,
+                    dead_intensity=2,
+                    intensities_stability_check=np.array([[6], [6]]),
+                    number_chr_for_stability_check=0,
+                    number_chromatograms_in_series=2,
+                    noise_intensity=0.3,
+                    probes_count=8,
+                    start_time='08:39',
+                    interval_between_chromatograms=32,
+                    cyctime=0.1,
+                    coef=0.0003,
+                    units='mV',
+                    analysis_date='25.01.2025')
+
+
+внедрение 3 диапазон:
+подготовили воду с содержанием бензапирена 0.1 мкг/дм3, концентрируют в 2000 раз -> 200 нг/мл
+конечный экстракт разбавили в 10 раз до 20 нг/мл
+
+(length_points=18001,
+                    dots_per_minute=600,
+                    bias_left_border=2000,
+                    bias_right_border=9000,
+                    bias_max_intensity=0.5,
+                    bias_min_intensity=0.03,
+                    bias_peaks_number=30,
+                    bias_max_peak_width=150,
+                    bias_min_peak_width=30,
+                    peaks_probe_number=1,
+                    widths_probe=np.array([[300], [300], [300], [300], [300], [300], [300], [300]]),
+                    intensities_probe_peaks=np.array([[60], [60], [60], [60], [60], [60], [60], [60]]),
+                    times_probe_peaks=np.array([[14900], [14900], [14900], [14900], [14900], [14900], [14900], [14900]]),
+                    repeatability=0.05,
+                    reproducibility=0.08,
+                    dead_time=1200,
+                    dead_width=200,
+                    dead_intensity=2,
+                    intensities_stability_check=np.array([[6], [6]]),
+                    number_chr_for_stability_check=0,
+                    number_chromatograms_in_series=2,
+                    noise_intensity=0.3,
+                    probes_count=8,
+                    start_time='15:12',
+                    interval_between_chromatograms=32,
+                    cyctime=0.1,
+                    coef=0.0003,
+                    units='mV',
+                    analysis_date='25.01.2025')

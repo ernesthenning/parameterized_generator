@@ -82,7 +82,7 @@
                     dead_width=100,
                     dead_intensity=2,
                     intensities_stability_check=np.array([[6], [6]]),
-                    number_chr_for_stability_check=2,
+                    number_chr_for_stability_check=0,
                     number_chromatograms_in_series=2,
                     noise_intensity=0.3,
                     probes_count=8,

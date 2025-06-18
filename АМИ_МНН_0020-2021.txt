@@ -1,0 +1,138 @@
+градуировка мкг/см3 смесь:
+ацетофенон 2.5 4 5 7.5 10  время 3.5
+вулкацит 25 40 50 75 100 время 4.5
+сульфенамид ц 10 15 20 30 40 время 5.6
+агидол-40 25 40 50 75 100 время 15.3
+
+каждый по 6 раз для градуировки
+
+концентрирование в 50 раз
+есть коэффициенты извлечения фиксированные в методике
+вулкацит 1.02
+сульфенамид 1.04
+ацетофенон 1.17
+агидол-40 1.13
+
+внедрение 1 диапазон (в исходном растворе мг/дм3 или мкг/см3):
+вулкацит 0.7
+сульфенамид 0.3
+ацетофенон 0.1
+агидол-40 0.75
+
+в конечном растворе:
+вулкацит 34.3
+сульфенамид 14.4
+ацетофенон 4.3
+агидол-40 33.2
+
+градуировка
+(length_points=10801,
+                    dots_per_minute=600,
+                    bias_left_border=700,
+                    bias_right_border=2200,
+                    bias_max_intensity=0.2,
+                    bias_min_intensity=0.03,
+                    bias_peaks_number=30,
+                    bias_max_peak_width=150,
+                    bias_min_peak_width=30,
+                    peaks_probe_number=4,
+                    widths_probe=np.array([
+                    [90, 70, 80, 65],
+                    [90, 70, 80, 65],
+                    [90, 70, 80, 65],
+                    [90, 70, 80, 65],
+                    [90, 70, 80, 65]]),
+                    intensities_probe_peaks=np.array([
+                    [25, 10, 15, 37.5],
+                    [40, 15, 24, 60],
+                    [50, 20, 30, 75],
+                    [75, 30, 45, 112.5],
+                    [100, 40, 60, 150]]),
+                    times_probe_peaks=np.array([
+                    [3300, 3960, 2700, 9180],
+                    [3300, 3960, 2700, 9180],
+                    [3300, 3960, 2700, 9180],
+                    [3300, 3960, 2700, 9180],
+                    [3300, 3960, 2700, 9180]]),
+                    repeatability=0.02,
+                    reproducibility=0.02,
+                    dead_time=1200,
+                    dead_width=200,
+                    dead_intensity=2,
+                    intensities_stability_check=np.array([[6], [6]]),
+                    number_chr_for_stability_check=0,
+                    number_chromatograms_in_series=6,
+                    noise_intensity=0.3,
+                    probes_count=5,
+                    start_time='08:08',
+                    interval_between_chromatograms=19,
+                    cyctime=0.1,
+                    coef=0.0003,
+                    units='mV',
+                    analysis_date='17.06.2025')
+
+внедрение
+(length_points=10801,
+                    dots_per_minute=600,
+                    bias_left_border=700,
+                    bias_right_border=2200,
+                    bias_max_intensity=7,
+                    bias_min_intensity=0.03,
+                    bias_peaks_number=30,
+                    bias_max_peak_width=150,
+                    bias_min_peak_width=30,
+                    peaks_probe_number=4,
+                    widths_probe=np.array([
+                    [90, 70, 80, 65],
+                    [90, 70, 80, 65],
+                    [90, 70, 80, 65],
+                    [90, 70, 80, 65],
+                    [90, 70, 80, 65],
+                    [90, 70, 80, 65],
+                    [90, 70, 80, 65],
+                    [90, 70, 80, 65],
+                    [90, 70, 80, 65],
+                    [90, 70, 80, 65]]),
+                    intensities_probe_peaks=np.array([
+                    [0, 0, 0, 0],
+                    [0, 0, 0, 0],
+                    [34.3, 14.4, 25.8, 49.8],
+                    [34.3, 14.4, 25.8, 49.8],
+                    [34.3, 14.4, 25.8, 49.8],
+                    [34.3, 14.4, 25.8, 49.8],
+                    [34.3, 14.4, 25.8, 49.8],
+                    [34.3, 14.4, 25.8, 49.8],
+                    [34.3, 14.4, 25.8, 49.8],
+                    [34.3, 14.4, 25.8, 49.8]]),
+                    times_probe_peaks=np.array([
+                    [3300, 3960, 2700, 9180],
+                    [3300, 3960, 2700, 9180],
+                    [3300, 3960, 2700, 9180],
+                    [3300, 3960, 2700, 9180],
+                    [3300, 3960, 2700, 9180],
+                    [3300, 3960, 2700, 9180],
+                    [3300, 3960, 2700, 9180],
+                    [3300, 3960, 2700, 9180],
+                    [3300, 3960, 2700, 9180],
+                    [3300, 3960, 2700, 9180]]),
+                    repeatability=0.015,
+                    reproducibility=0.09,
+                    dead_time=1200,
+                    dead_width=200,
+                    dead_intensity=2,
+                    intensities_stability_check=np.array([
+                    [0, 0, 0, 0],
+                    [0, 0, 0, 0],
+                    [40, 15, 24, 60],
+                    [40, 15, 24, 60]]),
+                    number_chr_for_stability_check=4,
+                    number_chromatograms_in_series=2,
+                    noise_intensity=0.3,
+                    probes_count=10,
+                    start_time='07:45',
+                    interval_between_chromatograms=19,
+                    cyctime=0.1,
+                    coef=0.0003,
+                    units='mV',
+                    analysis_date='18.06.2025')
+

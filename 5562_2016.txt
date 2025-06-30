@@ -87,7 +87,7 @@
                     bias_min_peak_width=30,
                     peaks_probe_number=1,
                     widths_probe=np.array([[85], [85], [85], [85], [85]]),
-                    intensities_probe_peaks=np.array([[10], [15], [20], [25], [40]]),
+                    intensities_probe_peaks=np.array([[10], [15], [20], [25], [30]]),
                     times_probe_peaks=np.array([[6500], [6500], [6500], [6500], [6500]]),
                     repeatability=0.02,
                     reproducibility=0.02,

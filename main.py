@@ -45,21 +45,21 @@ def generate():
     #for parameter in parameters:
      #   print(parameter)
 
-    gen = Generator(length_points=12001,
+    gen = Generator(length_points=6001,
                     dots_per_minute=600,
-                    bias_left_border=1200,
-                    bias_right_border=4900,
-                    bias_max_intensity=0.6,
+                    bias_left_border=1000,
+                    bias_right_border=2650,
+                    bias_max_intensity=1.3,
                     bias_min_intensity=0.03,
-                    bias_peaks_number=20,
+                    bias_peaks_number=15,
                     bias_max_peak_width=50,
-                    bias_min_peak_width=30,
+                    bias_min_peak_width=330,
                     peaks_probe_number=1,
-                    widths_probe=np.array([[0], [0], [250], [250], [250], [250]]),
-                    intensities_probe_peaks=np.array([[0], [0], [81], [83], [82], [80]]),
-                    times_probe_peaks=np.array([[6100], [6100], [6100], [6100], [6100], [6100]]),
-                    repeatability=0.03,
-                    reproducibility=0.06,
+                    widths_probe=np.array([[250]]),
+                    intensities_probe_peaks=np.array([[0]]),
+                    times_probe_peaks=np.array([[3100]]),
+                    repeatability=0.04,
+                    reproducibility=0.05,
                     dead_time=1200,
                     dead_width=200,
                     dead_intensity=2,
@@ -67,15 +67,15 @@ def generate():
                     number_chr_for_stability_check=0,
                     number_chromatograms_in_series=2,
                     noise_intensity=0.3,
-                    probes_count=6,
-                    start_time='06:15',
-                    interval_between_chromatograms=23,
+                    probes_count=1,
+                    start_time='13:06',
+                    interval_between_chromatograms=13,
                     cyctime=0.1,
                     coef=0.0003,
                     units='mV',
-                    analysis_date='04.01.2025')
+                    analysis_date='25.12.2024')
     gen.get_exported_chromatograms()
-    gen.generate_bats("04.01.2025")
+    gen.generate_bats("25.12.2024")
 
 
 if __name__ == '__main__':
